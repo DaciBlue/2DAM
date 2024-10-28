@@ -1,0 +1,25 @@
+LOCAL > INTERMEDIO > REMOTO
+
+
+
+git init > para iniciar repositorio poner la carpeta .git
+
+git remote add origin https://github.com/DaciBlue/2DAM.git > cuando no tiens ningún origin
+git remote set-url origin https://github.com/DaciBlue/2DAM.git > tienes que tener el proyecto creado en github
+
+git push --set-upstream origin master > para indicar a donde va el repositorio local
+
+
+git add . > entra al local desde fuera
+git commit -m > metes en un sobre y pasa al intermedio
+git push > mandar a remoto
+git pull > traer
+
+git status
+git commit -m "apuntes"
+git branch nombre > creas una rama llamada nombre
+git switch nombreRama > cambiar entre ramas
+git branch > ves en donde estas
+git branch -d changename prueba > borras con la -d las ramas changename y prueba
+
+git clone -url > clona de remoto a local el repositorio
