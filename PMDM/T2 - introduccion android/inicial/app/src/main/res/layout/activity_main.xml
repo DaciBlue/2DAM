@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Todos los elementos que esten dentro del linear se situan de forma linear: izq a derecha o de arriba a abajo-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Primera app ANDROID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:text="Pulsar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottonPulsar"
+    />
+
+    <!--wrap content: ocupa unicamente lo que necesita el texto-->
+    <!--match parent: ocupa ttodo el espacio disponible-->
+
+
+</LinearLayout>
