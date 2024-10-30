@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Menús del burguer king -->
-<BurguerKing title="¿Qué quieres comer hoy?">
+<BurguerKing title="¿Qué quieres comer hoy?" precio ="6€">
     <menu>
         <nombre>Menú King Cheetos</nombre>
         <carnes>2 carnes</carnes>
