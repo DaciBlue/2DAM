@@ -27,7 +27,7 @@ public class LecturaXMLburger1 {
         String atributoPrecio = nodoRaiz.getAttribute("precio");
         System.out.println(atributoTitulo);
         System.out.println(atributoPrecio);
-
+89iu
         // Elementos hijos del DOM de un XML con .getElementsByTagName(String tagname); .getLength()
         // NodeList algo statico... no se puede cambiar.
         NodeList nList = doc.getElementsByTagName("menu");
