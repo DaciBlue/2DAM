@@ -1,25 +1,30 @@
-LOCAL > INTERMEDIO > REMOTO
+Tu Proyecto Git: Del Ordenador a la Nube (y Viceversa)
 
+Piensa en Git como un juego de tres niveles:
 
+    LOCAL (Tu Ordenador): Donde tienes tus archivos y haces tus cambios.
+    INTERMEDIO (La "Sala de Espera"): Donde preparas tus cambios para enviarlos.
+    REMOTO (GitHub, GitLab, etc.): Donde guardas tu proyecto en la nube.
 
-git init > para iniciar repositorio poner la carpeta .git
+Comandos Básicos:
 
-git remote add origin https://github.com/DaciBlue/2DAM.git > cuando no tiens ningún origin
-git remote set-url origin https://github.com/DaciBlue/2DAM.git > tienes que tener el proyecto creado en github
+    git init: ¡Empezamos la fiesta! Esto crea la carpeta mágica .git en tu proyecto, convirtiéndolo en un repositorio Git.
+    git remote add origin <URL_de_tu_repo>: Conecta tu proyecto local con el remoto. "Origin" es el nombre que le damos por defecto al remoto principal. (Solo la primera vez).
+    git remote set-url origin <URL_de_tu_repo>: Cambia la dirección del remoto "origin". Útil si te equivocaste al principio o si cambias de URL.
+    git clone <URL_de_tu_repo>: ¡Clonación total! Copia un proyecto remoto a tu ordenador, con todo su historial.
+    git status: ¿Qué está pasando aquí? Te muestra los archivos que has modificado, los que están en la "sala de espera" y en qué rama estás.
+    git add .: ¡A la "sala de espera"! Añade todos los archivos modificados y nuevos al área de preparación. (El punto "." significa "todo").
+    git commit -m "Mensaje descriptivo": ¡A empaquetar! Crea un "paquete" con tus cambios, con un mensaje que explique qué hiciste.
+    git push: ¡A la nube! Envía tus "paquetes" (commits) al repositorio remoto.
+    git pull: ¡Actualización desde la nube! Trae los últimos cambios del remoto a tu ordenador y los combina con tu trabajo.
+    git branch <nombre_de_la_rama>: ¡Nueva rama! Crea una copia de tu trabajo para probar cosas sin arriesgar el original.
+    git switch <nombre_de_la_rama>: ¡Cambio de rama! Te mueve a la rama que elijas. Tambien puedes usar git checkout <nombre_de_la_rama>.
+    git branch: ¿En qué rama estoy? Te muestra todas las ramas y marca la actual.
+    git branch -d <nombre_de_la_rama>: ¡Adiós, rama! Borra una rama (si ya no la necesitas).
+    git merge <nombre_de_la_rama>: ¡A juntar ramas! Combina los cambios de otra rama con la tuya.
 
-git push --set-upstream origin master > para indicar a donde va el repositorio local
+Trucos y Consejos:
 
-
-git add . > entra al local desde fuera
-git commit -m > metes en un sobre y pasa al intermedio
-git push > mandar a remoto
-git pull > traer
-
-git status
-git commit -m "apuntes"
-git branch nombre > creas una rama llamada nombre
-git switch nombreRama > cambiar entre ramas
-git branch > ves en donde estas
-git branch -d changename prueba > borras con la -d las ramas changename y prueba
-
-git clone -url > clona de remoto a local el repositorio
+    Si es la primera vez que subes una rama nueva, usa git push -u origin <nombre_de_la_rama> para decirle a Git dónde tiene que seguirla en el futuro.
+    Si Git te dice que hay "conflictos", significa que tienes que resolver manualmente las diferencias entre tu trabajo y el de otros. ¡No te asustes! Git te ayuda a ver dónde están los problemas.
+    Si al hacer pull te sale un error de "unrelated histories" usa git pull origin main --allow-unrelated-histories para poder juntar los repositorios.
